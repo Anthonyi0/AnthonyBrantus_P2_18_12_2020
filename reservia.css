@@ -5,7 +5,7 @@ body{
 }
 a{
 	text-decoration: none;
-	 color: black;
+	color: black;
 }
 .header{
 	display: grid;
@@ -56,7 +56,7 @@ h1{
 }
 .fa-map-marker-alt{
 	background-color: #F2F2F2;
-	padding: 16px 20px;
+	padding: 15px 20px 18px 20px;
 	border-radius: 15px 0 0 15px;
 	text-align: center;
 }
@@ -214,7 +214,7 @@ h5,.text_hebergement{
 .article_activite{
 	display: flex;
 	flex-wrap: wrap;
-	padding: 0 40px 0 40px;
+	padding: 0 40px 40px 40px;
 	justify-content: space-between;
 }
 #activite_marseille{
@@ -303,10 +303,18 @@ h4{
 	color: silver;
 }
 .economique:hover,.familial:hover,.romantique:hover,.animaux:hover{
-	background-color: red;
+	background-color: #DEEBFF;
 }
 .loupe{
 	display: none;
+}
+.input::placeholder{
+	color: black;
+	opacity: 1;
+}
+.input:focus{
+	border: 0;
+	outline: 0;
 }
 @media screen and (min-width: 925px){
     .article_marseille{
@@ -382,8 +390,11 @@ h4{
     .activite{
     	padding: 32px 0;
     }
-    .nav_input {
-    padding: 0px 20px 0 20px;
+    .nav_input{
+    	padding: 0 20px 0 20px;
+	}
+	.input{
+		padding: 2px 0 4px 20px;
 	}
 	.recherche_nature{
 		font-size: 0.9em;
@@ -417,10 +428,10 @@ h4{
 		font-size: 1.3em;
 	}
 	.article_marseille{
-	display: flex;
-	flex-direction: column;
-	padding: 0px 20px 20px 20px;
-	background-color: white;
+		display: flex;
+		flex-direction: column;
+		padding: 0px 20px 20px 20px;
+		background-color: white;
 	}
 	.logement{
 		box-shadow: 0px 0px 2px silver;
@@ -445,8 +456,8 @@ h4{
 		grid-row: 1/1;
 	}
 	.colone_activite{
-    max-width: 375px;
-    max-height: 190px;
+    	max-width: 375px;
+    	max-height: 190px;
 	}
 	.colone_activite:nth-child(2){
 		grid-row: 2/2;
